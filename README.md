@@ -29,6 +29,21 @@ You can run this application either using Docker or locally via Python.
 3. Run the development server:
     ```bash
    uvicorn app.main:app --reload
+   
+### Postman Collection
+A complete Postman collection is included in the root directory: travel_api_collection.json. It covers all 8 endpoints with pre-configured JSON bodies and dynamic variables.
+
+How to use:
+
+1. Open Postman and click the Import button.
+2. Select the travel_api_collection.json file from the project root.
+3. The collection uses a local variable baseUrl set to http://localhost:8000.
+4. For the protected endpoint (DELETE /projects/{project_id}), Basic Authentication is already configured:
+
+   ```bash
+   Username: login
+
+   Password: supersecret0000
 
 ### API Documentation
 
