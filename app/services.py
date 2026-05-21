@@ -20,4 +20,3 @@ async def verify_place_exists(external_id: int) -> bool:
             return False
         else:
             raise HTTPException(status_code=response.status_code, detail=response.text)
-
