@@ -61,7 +61,7 @@ def delete_project(project_id: int, db: Session = Depends(get_db), username: str
 
 @app.post("/projects/{project_id}/places", response_model=schemas.Place, status_code=status.HTTP_201_CREATED)
 async def add_place(project_id: int, place: schemas.PlaceCreate, db: Session = Depends(get_db)):
-    return await crud.add_place(db=db, project_id=project_id, place=place)
+    return await crud.add_place_to_project(db=db, project_id=project_id, place=place)
 
 @app.get("/places/{place_id}", response_model=schemas.Place)
 def read_place(place_id: int, db: Session = Depends(get_db)):
