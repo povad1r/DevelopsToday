@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables (security)
+.env
+.env.*
+
+# Database (не коммитим локальную базу с тестовыми данными)
+*.db
+*.sqlite
+*.sqlite3
+travel_app.db
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
