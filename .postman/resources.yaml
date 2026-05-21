@@ -1,7 +1,0 @@
-# Use this workspace to collaborate
-workspace:
-  id: 3a983703-a254-46bd-84ea-3e77c2721a5c
-
-localResources:
-  collections:
-    - ../travel_api_collection.json
